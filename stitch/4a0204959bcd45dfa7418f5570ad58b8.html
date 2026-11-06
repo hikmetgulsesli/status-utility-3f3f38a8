@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Status Page - Status Utility</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col font-sans">
+  <header class="w-full bg-white border-b border-slate-200 py-4 px-8 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <div class="w-9 h-9 rounded-lg bg-emerald-600 flex items-center justify-center text-white font-bold text-sm tracking-wide">
+        SU
+      </div>
+      <div>
+        <div class="text-base font-semibold text-slate-900 leading-tight">Status Utility</div>
+        <div class="text-xs text-slate-500">Service Health &amp; Runtime Monitor</div>
+      </div>
+    </div>
+    <div class="flex items-center space-x-2 bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full text-xs font-medium border border-emerald-200">
+      <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span>
+      <span>Operational</span>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-4xl w-full mx-auto p-8 flex flex-col justify-center">
+    <div data-surface-id="SURF_STATUS_PAGE" class="bg-white border border-slate-200 rounded-xl shadow-sm p-8 space-y-8">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-6 border-b border-slate-100">
+        <div>
+          <h1 class="text-2xl font-bold tracking-tight text-slate-900">System Status Overview</h1>
+          <p class="text-sm text-slate-500 mt-1">Current state monitoring for local and upstream runtime services.</p>
+        </div>
+        <button
+          type="button"
+          data-action="ACT_REFRESH_STATUS"
+          data-control-slot="CSLOT_REFRESH_STATUS_REFRESH_BUTTON"
+          class="inline-flex items-center justify-center px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold rounded-lg shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400"
+        >
+          Refresh
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-6 bg-slate-50 rounded-lg border border-slate-100 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Current Status Message</div>
+            <div class="text-xl font-semibold text-slate-800">Status refreshed</div>
+          </div>
+          <div class="mt-4 flex items-center text-xs text-emerald-600 font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block mr-2"></span>
+            Synchronized with storage
+          </div>
+        </div>
+
+        <div class="p-6 bg-slate-50 rounded-lg border border-slate-100 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Status Value</div>
+            <div class="inline-flex items-center px-3 py-1 rounded bg-emerald-100 text-emerald-800 font-mono text-base font-semibold">
+              refreshed
+            </div>
+          </div>
+          <div class="mt-4 text-xs text-slate-400">
+            Key: status | Persistent value
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs text-slate-500">
+        <div class="bg-slate-50/50 p-3 rounded border border-slate-100">
+          <span class="block text-slate-400 font-medium mb-1">Route Endpoint</span>
+          <span class="font-mono text-slate-700 font-medium">/status</span>
+        </div>
+        <div class="bg-slate-50/50 p-3 rounded border border-slate-100">
+          <span class="block text-slate-400 font-medium mb-1">Target Environment</span>
+          <span class="text-slate-700 font-medium">Production Node</span>
+        </div>
+        <div class="bg-slate-50/50 p-3 rounded border border-slate-100">
+          <span class="block text-slate-400 font-medium mb-1">Storage Engine</span>
+          <span class="text-slate-700 font-medium">Local Storage Sync</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="w-full border-t border-slate-200 py-4 px-8 text-xs text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-2">
+    <div>Status Utility &mdash; Operational Runtime</div>
+    <div>All systems nominal</div>
+  </footer>
+</body>
+</html>
