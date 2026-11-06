@@ -1,0 +1,144 @@
+[
+  {
+    "screenId": "4a0204959bcd45dfa7418f5570ad58b8",
+    "title": "Status Page - Status Utility",
+    "componentName": "StatusPageStatusUtility",
+    "file": "src/screens/StatusPageStatusUtility.tsx",
+    "buttons": 1,
+    "inputs": 0,
+    "textareas": 0,
+    "selects": 0,
+    "links": 0,
+    "actions": [
+      {
+        "id": "refresh-1",
+        "kind": "button",
+        "label": "Refresh",
+        "index": 0,
+        "actionRef": "ACT_REFRESH_STATUS",
+        "sourceElementRef": "E000002",
+        "physicalControlRef": "CTRL_a03e444973525344",
+        "controlSlotRef": "CSLOT_REFRESH_STATUS_REFRESH_BUTTON",
+        "surfaceRef": "SURF_STATUS_PAGE",
+        "affectedSurfaceRefs": [
+          "SURF_STATUS_PAGE"
+        ],
+        "tagName": "button",
+        "nativeControlKind": "button",
+        "role": null,
+        "ariaLabel": null,
+        "href": null,
+        "interactiveRole": false,
+        "generatedLocalId": "refresh-1",
+        "semanticSource": "data-action",
+        "sourceLocator": "stitch/rendered-dom-v2/4a0204959bcd45dfa7418f5570ad58b8.html",
+        "selector": "[data-action-id=\"refresh-1\"]"
+      }
+    ],
+    "controls": [
+      {
+        "id": "refresh-1",
+        "kind": "button",
+        "label": "Refresh",
+        "index": 0,
+        "actionRef": "ACT_REFRESH_STATUS",
+        "sourceElementRef": "E000002",
+        "physicalControlRef": "CTRL_a03e444973525344",
+        "controlSlotRef": "CSLOT_REFRESH_STATUS_REFRESH_BUTTON",
+        "surfaceRef": "SURF_STATUS_PAGE",
+        "affectedSurfaceRefs": [
+          "SURF_STATUS_PAGE"
+        ],
+        "tagName": "button",
+        "nativeControlKind": "button",
+        "role": null,
+        "ariaLabel": null,
+        "href": null,
+        "interactiveRole": false,
+        "generatedLocalId": "refresh-1",
+        "semanticSource": "data-action",
+        "sourceLocator": "stitch/rendered-dom-v2/4a0204959bcd45dfa7418f5570ad58b8.html",
+        "selector": "[data-action-id=\"refresh-1\"]",
+        "generatedSourceLocator": "src/screens/StatusPageStatusUtility.tsx"
+      }
+    ],
+    "observables": [
+      {
+        "observableRef": "OBS_REFRESH_STATUS_REFRESH_CONTROL_OBSERVABLE",
+        "actionRef": "ACT_REFRESH_STATUS",
+        "selectorKind": "control",
+        "controlSlotRef": "CSLOT_REFRESH_STATUS_REFRESH_BUTTON",
+        "evidenceRef": "EVID_REFRESH_STATUS_REFRESH_CONTROL_OBSERVABLE",
+        "sourceElementRef": "E000002",
+        "sourceLocator": "stitch/rendered-dom-v2/4a0204959bcd45dfa7418f5570ad58b8.html",
+        "selector": "[data-observable-refs~=\"OBS_REFRESH_STATUS_REFRESH_CONTROL_OBSERVABLE\"]",
+        "generatedSourceLocator": "src/screens/StatusPageStatusUtility.tsx"
+      },
+      {
+        "observableRef": "OBS_REFRESH_STATUS_STATUS_PERSISTENCE_OBSERVABLE",
+        "actionRef": "ACT_REFRESH_STATUS",
+        "selectorKind": "surface",
+        "surfaceRef": "SURF_STATUS_PAGE",
+        "evidenceRef": "EVID_REFRESH_STATUS_STATUS_PERSISTENCE_OBSERVABLE",
+        "sourceElementRef": "E000001",
+        "sourceLocator": "stitch/rendered-dom-v2/4a0204959bcd45dfa7418f5570ad58b8.html",
+        "selector": "[data-observable-refs~=\"OBS_REFRESH_STATUS_STATUS_PERSISTENCE_OBSERVABLE\"]",
+        "generatedSourceLocator": "src/screens/StatusPageStatusUtility.tsx"
+      },
+      {
+        "observableRef": "OBS_REFRESH_STATUS_STATUS_ROUTE_OBSERVABLE",
+        "actionRef": "ACT_REFRESH_STATUS",
+        "selectorKind": "surface",
+        "surfaceRef": "SURF_STATUS_PAGE",
+        "evidenceRef": "EVID_REFRESH_STATUS_STATUS_ROUTE_OBSERVABLE",
+        "sourceElementRef": "E000001",
+        "sourceLocator": "stitch/rendered-dom-v2/4a0204959bcd45dfa7418f5570ad58b8.html",
+        "selector": "[data-observable-refs~=\"OBS_REFRESH_STATUS_STATUS_ROUTE_OBSERVABLE\"]",
+        "generatedSourceLocator": "src/screens/StatusPageStatusUtility.tsx"
+      },
+      {
+        "observableRef": "OBS_REFRESH_STATUS_STATUS_TEXT_OBSERVABLE",
+        "actionRef": "ACT_REFRESH_STATUS",
+        "selectorKind": "surface",
+        "surfaceRef": "SURF_STATUS_PAGE",
+        "evidenceRef": "EVID_REFRESH_STATUS_STATUS_TEXT_OBSERVABLE",
+        "sourceElementRef": "E000001",
+        "sourceLocator": "stitch/rendered-dom-v2/4a0204959bcd45dfa7418f5570ad58b8.html",
+        "selector": "[data-observable-refs~=\"OBS_REFRESH_STATUS_STATUS_TEXT_OBSERVABLE\"]",
+        "generatedSourceLocator": "src/screens/StatusPageStatusUtility.tsx"
+      }
+    ],
+    "projection": {
+      "schema": "setfarm.stitch-screen-projection.v2",
+      "mode": "contract_only",
+      "targetRef": "TARGET_STATUS_PAGE",
+      "authoritySchema": "setfarm.design-interaction-graph.v2",
+      "rawInteractiveCounts": {
+        "buttons": 1,
+        "links": 0,
+        "inputs": 0,
+        "textareas": 0,
+        "selects": 0
+      },
+      "requiredObservableRefs": [
+        "OBS_REFRESH_STATUS_REFRESH_CONTROL_OBSERVABLE",
+        "OBS_REFRESH_STATUS_STATUS_PERSISTENCE_OBSERVABLE",
+        "OBS_REFRESH_STATUS_STATUS_ROUTE_OBSERVABLE",
+        "OBS_REFRESH_STATUS_STATUS_TEXT_OBSERVABLE"
+      ]
+    },
+    "componentApi": {
+      "schema": "setfarm.generated-screen-component-api.v1",
+      "actionsPropName": "actions",
+      "actionBindings": [
+        {
+          "generatedLocalId": "refresh-1",
+          "actionRef": "ACT_REFRESH_STATUS",
+          "inputFields": []
+        }
+      ],
+      "inputTransports": []
+    },
+    "rejectedControls": []
+  }
+]
